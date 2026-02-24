@@ -10,6 +10,38 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .faq-item {
+            margin-bottom: var(--space-md);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            padding-bottom: var(--space-md);
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .faq-item h3 {
+            font-size: 1.125rem;
+            margin-bottom: var(--space-sm);
+            color: var(--clr-text);
+        }
+
+        .faq-item p {
+            color: var(--clr-text-muted);
+            margin-bottom: 0;
+        }
+
+        .contact-box {
+            background-color: var(--clr-primary-alpha);
+            padding: var(--space-lg);
+            border-radius: var(--radius-md);
+            text-align: center;
+            margin-top: var(--space-xl);
+        }
+    </style>
 </head>
 
 <body class="bg-light">
@@ -26,23 +58,70 @@
         </div>
     </header>
 
-    <main class="support-main">
+    <main class="support-main" style="padding-bottom: var(--space-xl);">
         <section class="support-header slide-up">
             <div class="container">
-                <h1>Support</h1>
-                <p class="subtitle">How can we help you today?</p>
+                <h1>Support & FAQ</h1>
+                <p class="subtitle">Find answers to common questions about Obsidian Ebook Reader.</p>
             </div>
         </section>
 
         <section class="support-content fade-in">
             <div class="container container-small">
-                <div class="empty-state">
-                    <div class="empty-icon">✉️</div>
-                    <h2>Check back soon</h2>
-                    <p>We are currently updating our support center. Please check back later for FAQs, contact forms,
-                        and helpful guides for Obsidian Ebook Reader.</p>
-                    <a href="index.html" class="btn btn-outline" style="margin-top: 2rem;">Return to Homepage</a>
+
+                <div
+                    style="background-color: var(--clr-surface); padding: var(--space-xl); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); border: 1px solid #e2e8f0; margin-top: var(--space-lg);">
+                    <h2 style="margin-bottom: var(--space-lg); font-size: 1.5rem;">Frequently Asked Questions</h2>
+
+                    <div class="faq-item">
+                        <h3>Does the app collect any of my data?</h3>
+                        <p>No, Obsidian Ebook Reader does not collect, transmit, or store any of your personal data or
+                            reading habits. See our <a href="privacy.html"
+                                style="color: var(--clr-primary); text-decoration: underline;">Privacy Policy</a> for
+                            more details.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Does the app work completely offline?</h3>
+                        <p>Yes! Once downloaded from the Microsoft Store, the app functions 100% offline. You do not
+                            need an internet connection to open or read your books.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>What file formats are supported?</h3>
+                        <p>Currently, Obsidian Ebook Reader supports <strong>EPUB</strong> and <strong>PDF</strong>
+                            formats. We focus on providing the best possible experience for these two most common
+                            document types.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Can I purchase books directly in the app?</h3>
+                        <p>No. Obsidian Ebook Reader is strictly a document viewer. You will need to acquire DRM-free
+                            EPUBs or PDFs from external sources and open them locally on your device.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>How do I change the font size or colors?</h3>
+                        <p>While reading a book, click the "Styling" button to
+                            access the formatting menu. From there, you can adjust font, font size, margins, word
+                            spacing, and line spacing.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Will my reading progress sync across devices?</h3>
+                        <p>Because the app operates entirely offline to protect your privacy, reading progress currently
+                            only saves locally on the specific device you are using.</p>
+                    </div>
                 </div>
+
+                <div class="contact-box fade-in delay-1">
+                    <h2 style="margin-bottom: var(--space-sm); font-size: 1.25rem;">Still need help?</h2>
+                    <p style="margin-bottom: var(--space-md);">If you encountered a bug or have a feature request, you
+                        can leave a review on the Microsoft Store to let us know.</p>
+                    <a href="https://apps.microsoft.com/store/detail/9NMRH79RP0F4" target="_blank" class="btn">View
+                        Store Listing</a>
+                </div>
+
             </div>
         </section>
     </main>
@@ -58,8 +137,7 @@
             </div>
             <div class="footer-links">
                 <a href="support.html">Support</a>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
+                <a href="privacy.html">Privacy Policy</a>
             </div>
         </div>
     </footer>
