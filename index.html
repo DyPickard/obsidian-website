@@ -4,184 +4,470 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Obsidian Ebook Reader - The Best Reading Experience on Windows</title>
+    <title>Obsidian Ebook Reader — Premium EPUB & PDF Reader for Windows</title>
     <meta name="description"
-        content="Experience your EPUBs on Windows like never before with Obsidian Ebook Reader. Fast, beautiful, and customizable.">
+        content="A private, offline ebook reader for Windows. Organize EPUBs and PDFs from your folders with powerful library management and zero data collection.">
+    <meta name="theme-color" content="#f7f8fb">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Obsidian Ebook Reader — Premium Reading for Windows">
+    <meta property="og:description"
+        content="Powerful library management and complete privacy. Organize your ebooks on Windows with no accounts or telemetry.">
+    <meta property="og:image" content="assets/dark_mode_library.png">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     <script type="module" src="https://get.microsoft.com/badge/ms-store-badge.bundled.js"></script>
 </head>
 
-<body>
-    <header class="header blur-nav">
-        <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <div class="logo-icon"></div>
-                Obsidian Reader
+<body class="page-home">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <div class="ambient-bg" aria-hidden="true">
+        <div class="ambient-grid"></div>
+        <div class="glow-orb orb-primary"></div>
+        <div class="glow-orb orb-secondary"></div>
+    </div>
+
+    <header class="site-header" id="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo" aria-label="Obsidian Ebook Reader home">
+                <span class="logo-icon" aria-hidden="true"></span>
+                <span class="logo-text">Obsidian</span>
             </a>
-            <nav class="main-nav">
-                <a href="#features">Features</a>
-                <a href="#pricing">Pricing</a>
-                <a href="support.html">Support</a>
-                <a href="#download" class="btn btn-small">Get App</a>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"
+                aria-label="Open menu">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
+
+            <nav class="site-nav" id="site-nav" aria-label="Primary">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#download" class="nav-link">Pricing</a>
+                <a href="support.html" class="nav-link">Support</a>
+                <a href="#download" class="btn btn-primary btn-small nav-cta">Get the app</a>
             </nav>
         </div>
     </header>
 
-    <main>
-        <section class="hero slide-up">
-            <div class="container hero-container">
-                <div class="hero-content">
-                    <span class="badge">Now Available on Windows</span>
-                    <h1 class="hero-title">Your books, beautifully organized.</h1>
-                    <p class="hero-subtitle">Obsidian Reader allows you to read EPUBs and PDFs with no ads, no online
-                        connection, and complete privacy. Manage your library with folder synchronization, editable
-                        metadata, and enjoy a modern, customizable interface for the best reading experience.</p>
-                    <div class="hero-cta" id="download">
-                        <ms-store-badge productid="9NMRH79RP0F4" productname="Obsidian Ebook Reader"
-                            window-mode="direct" theme="light" size="large" language="en-us" animation="on">
-                        </ms-store-badge>
+    <main id="main-content">
+        <section class="hero" aria-labelledby="hero-heading">
+            <div class="container hero-grid">
+                <div class="hero-copy reveal">
+                    <p class="eyebrow">
+                        <span class="eyebrow-dot" aria-hidden="true"></span>
+                        Now on Microsoft Store · Windows 11
+                    </p>
+                    <h1 id="hero-heading" class="hero-title">
+                        Simply your library.<br>
+                        <span class="title-accent">Designed for privacy.</span>
+                    </h1>
+                    <p class="hero-lead">
+                        Obsidian is a Windows ebook reader built around library management and privacy.
+                        Point it at your folders, organize EPUBs and PDFs, and read entirely offline —
+                        with no accounts, ads, or telemetry.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#download" class="btn btn-primary">Compare versions</a>
+                        <a href="#features" class="btn btn-secondary">Explore features</a>
                     </div>
+                    <ul class="hero-trust" aria-label="Highlights">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" aria-hidden="true">
+                                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" />
+                            </svg>
+                            Folder-based library
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" aria-hidden="true">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                            </svg>
+                            No accounts or telemetry
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" aria-hidden="true">
+                                <rect x="2" y="3" width="20" height="14" rx="2" />
+                                <path d="M8 21h8M12 17v4" />
+                            </svg>
+                            Built for Windows 11
+                        </li>
+                    </ul>
                 </div>
-                <div class="hero-visual">
-                    <div class="app-mockup">
-                        <img src="assets/screenshot.png" alt="Obsidian Ebook Reader Application Interface"
-                            class="mockup-img" id="hero-img">
-                        <div class="mockup-glow"></div>
+
+                <div class="hero-visual reveal reveal-delay-2">
+                    <div class="device-frame device-frame--hero">
+                        <div class="win-titlebar" aria-hidden="true">
+                            <div class="win-titlebar-start">
+                                <span class="win-app-icon"></span>
+                                <span class="win-app-title">Obsidian Ebook Reader</span>
+                            </div>
+                            <div class="win-titlebar-controls">
+                                <span class="win-control win-control--minimize"></span>
+                                <span class="win-control win-control--maximize"></span>
+                                <span class="win-control win-control--close"></span>
+                            </div>
+                        </div>
+                        <img src="assets/screenshot.png"
+                            alt="Obsidian Ebook Reader showing the My Library list view on Windows"
+                            width="960" height="600" class="device-screenshot" loading="eager" decoding="async">
                     </div>
+                    <div class="hero-glow" aria-hidden="true"></div>
                 </div>
             </div>
         </section>
 
-        <section class="pricing" id="pricing">
+        <section class="stats-bar" aria-label="Product highlights">
+            <div class="container stats-grid">
+                <div class="stat reveal">
+                    <span class="stat-value">Library</span>
+                    <span class="stat-label">Folder sync &amp; organization</span>
+                </div>
+                <div class="stat reveal reveal-delay-1">
+                    <span class="stat-value">Private</span>
+                    <span class="stat-label">Zero data collection</span>
+                </div>
+                <div class="stat reveal reveal-delay-2">
+                    <span class="stat-value">Offline</span>
+                    <span class="stat-label">No cloud required</span>
+                </div>
+                <div class="stat reveal reveal-delay-3">
+                    <span class="stat-value">Windows</span>
+                    <span class="stat-label">Native Windows 11 app</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="features" id="features" aria-labelledby="features-heading">
             <div class="container">
-                <div class="section-header fade-in">
-                    <h2>Choose Your Version</h2>
-                    <p>Both versions are optimized for Windows and fully offline. Pick the plan that's right for you.</p>
+                <header class="section-intro reveal">
+                    <p class="section-eyebrow">Features</p>
+                    <h2 id="features-heading">Built for your library and your privacy</h2>
+                    <p class="section-lead">
+                        Organize books from your own folders, keep everything on your machine, and read without
+                        handing data to anyone else.
+                    </p>
+                </header>
+
+                <div class="privacy-callout reveal">
+                    <div class="privacy-callout-icon" aria-hidden="true">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                        </svg>
+                    </div>
+                    <div class="privacy-callout-body">
+                        <h3>Private by design</h3>
+                        <p>No accounts, ads, or telemetry. Your books, folders, and reading habits stay on your
+                            Windows PC — never on our servers.</p>
+                    </div>
                 </div>
 
-                <div class="pricing-grid">
-                    <div class="pricing-card fade-in delay-1">
-                        <div class="pricing-header">
-                            <h3>Free</h3>
-                            <p class="pricing-desc">Perfect for casual readers</p>
+                <div class="showcase-list">
+                    <article class="showcase reveal" aria-labelledby="showcase-add-heading">
+                        <div class="showcase-copy">
+                            <p class="showcase-label">Library management</p>
+                            <h3 id="showcase-add-heading">Add books your way</h3>
+                            <p>Import one file at a time, pull in a whole folder, include nested subfolders, or set up
+                                folder sync so your library stays up to date automatically.</p>
+                            <ul class="showcase-points">
+                                <li>Add File — single EPUB or PDF</li>
+                                <li>Add Folder — bulk import</li>
+                                <li>Include Subfolders</li>
+                                <li>Sync Folders — auto-scanned directories</li>
+                            </ul>
                         </div>
-                        <ul class="pricing-features">
-                            <li>Add up to 50 books into library</li>
-                            <li>Edit theme colors</li>
-                            <li>Edit book styling (font, text size, margins, and more)</li>
-                            <li>Save bookmarks</li>
-                            <li>Offline reading</li>
+                        <figure class="showcase-figure">
+                            <div class="device-frame device-frame--showcase">
+                                <div class="win-titlebar" aria-hidden="true">
+                                    <div class="win-titlebar-start">
+                                        <span class="win-app-icon"></span>
+                                        <span class="win-app-title">Obsidian Ebook Reader</span>
+                                    </div>
+                                    <div class="win-titlebar-controls">
+                                        <span class="win-control win-control--minimize"></span>
+                                        <span class="win-control win-control--maximize"></span>
+                                        <span class="win-control win-control--close"></span>
+                                    </div>
+                                </div>
+                                <img src="assets/add_to_library_menu.png"
+                                    alt="Add to Library dialog with options to add a file, add a folder, include subfolders, and sync folders"
+                                    width="800" height="500" class="device-screenshot" loading="lazy" decoding="async">
+                            </div>
+                        </figure>
+                    </article>
+
+                    <article class="showcase showcase--reverse reveal" aria-labelledby="showcase-metadata-heading">
+                        <div class="showcase-copy">
+                            <p class="showcase-label">Library management</p>
+                            <h3 id="showcase-metadata-heading">Edit book metadata</h3>
+                            <p>Fix titles, authors, and cover art after import so large collections stay organized.
+                                Premium lets you curate every detail of your shelf.</p>
+                            <ul class="showcase-points">
+                                <li>Edit title and author</li>
+                                <li>Replace cover images</li>
+                                <li>Reset to defaults when needed</li>
+                            </ul>
+                        </div>
+                        <figure class="showcase-figure">
+                            <div class="device-frame device-frame--showcase">
+                                <div class="win-titlebar" aria-hidden="true">
+                                    <div class="win-titlebar-start">
+                                        <span class="win-app-icon"></span>
+                                        <span class="win-app-title">Obsidian Ebook Reader</span>
+                                    </div>
+                                    <div class="win-titlebar-controls">
+                                        <span class="win-control win-control--minimize"></span>
+                                        <span class="win-control win-control--maximize"></span>
+                                        <span class="win-control win-control--close"></span>
+                                    </div>
+                                </div>
+                                <img src="assets/editing_book_data.png"
+                                    alt="Edit Book dialog for updating a book title, author, and cover"
+                                    width="800" height="500" class="device-screenshot" loading="lazy" decoding="async">
+                            </div>
+                        </figure>
+                    </article>
+
+                    <article class="showcase reveal" aria-labelledby="showcase-library-heading">
+                        <div class="showcase-copy">
+                            <p class="showcase-label">Your library</p>
+                            <h3 id="showcase-library-heading">Browse and organize at a glance</h3>
+                            <p>See covers, titles, authors, and formats in a sortable list. Mark favorites, switch
+                                views, and manage growing collections without losing track of a single book.</p>
+                            <ul class="showcase-points">
+                                <li>Sort and filter your collection</li>
+                                <li>List and grid-style browsing</li>
+                                <li>Light and dark interface themes</li>
+                            </ul>
+                        </div>
+                        <figure class="showcase-figure">
+                            <div class="device-frame device-frame--showcase">
+                                <div class="win-titlebar" aria-hidden="true">
+                                    <div class="win-titlebar-start">
+                                        <span class="win-app-icon"></span>
+                                        <span class="win-app-title">Obsidian Ebook Reader</span>
+                                    </div>
+                                    <div class="win-titlebar-controls">
+                                        <span class="win-control win-control--minimize"></span>
+                                        <span class="win-control win-control--maximize"></span>
+                                        <span class="win-control win-control--close"></span>
+                                    </div>
+                                </div>
+                                <img src="assets/dark_mode_library.png"
+                                    alt="My Library view in dark mode showing book covers, titles, authors, and EPUB format"
+                                    width="800" height="500" class="device-screenshot" loading="lazy" decoding="async">
+                            </div>
+                        </figure>
+                    </article>
+
+                    <article class="showcase showcase--reverse reveal" aria-labelledby="showcase-style-heading">
+                        <div class="showcase-copy">
+                            <p class="showcase-label">Reading experience</p>
+                            <h3 id="showcase-style-heading">Typography and layout controls</h3>
+                            <p>Open the styling panel while you read to adjust fonts, spacing, and margins. Dial in a
+                                comfortable layout for long sessions on any screen.</p>
+                            <ul class="showcase-points">
+                                <li>Font family and size</li>
+                                <li>Line, word, and letter spacing</li>
+                                <li>Margin presets and page layout</li>
+                            </ul>
+                        </div>
+                        <figure class="showcase-figure">
+                            <div class="device-frame device-frame--showcase">
+                                <div class="win-titlebar" aria-hidden="true">
+                                    <div class="win-titlebar-start">
+                                        <span class="win-app-icon"></span>
+                                        <span class="win-app-title">Obsidian Ebook Reader</span>
+                                    </div>
+                                    <div class="win-titlebar-controls">
+                                        <span class="win-control win-control--minimize"></span>
+                                        <span class="win-control win-control--maximize"></span>
+                                        <span class="win-control win-control--close"></span>
+                                    </div>
+                                </div>
+                                <img src="assets/editing_book_style_and_font.png"
+                                    alt="Reading view with styling panel open for font size, font family, spacing, and margins"
+                                    width="800" height="500" class="device-screenshot" loading="lazy" decoding="async">
+                            </div>
+                        </figure>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing" id="download" aria-labelledby="pricing-heading">
+            <div class="container">
+                <header class="section-intro reveal">
+                    <p class="section-eyebrow">Pricing</p>
+                    <h2 id="pricing-heading">Choose your version</h2>
+                    <p class="section-lead">
+                        Start reading for free, or unlock unlimited library power with Premium.
+                    </p>
+                </header>
+
+                <div class="pricing-cards">
+                    <article class="plan-card reveal">
+                        <header class="plan-header">
+                            <h3 class="plan-name">Essential</h3>
+                            <p class="plan-tagline">Everything you need to start reading</p>
+                        </header>
+                        <ul class="plan-features">
+                            <li>
+                                <svg class="plan-icon plan-icon--yes" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                                Read EPUBs and PDFs
+                            </li>
+                            <li>
+                                <svg class="plan-icon plan-icon--yes" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                                Themes and font styling
+                            </li>
+                            <li>
+                                <svg class="plan-icon plan-icon--yes" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                                Up to 50 books
+                            </li>
+                            <li>
+                                <svg class="plan-icon plan-icon--no" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                                    <line x1="18" y1="6" x2="6" y2="18" />
+                                    <line x1="6" y1="6" x2="18" y2="18" />
+                                </svg>
+                                Folder sync
+                            </li>
+                            <li>
+                                <svg class="plan-icon plan-icon--no" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                                    <line x1="18" y1="6" x2="6" y2="18" />
+                                    <line x1="6" y1="6" x2="18" y2="18" />
+                                </svg>
+                                Subfolder import
+                            </li>
+                            <li>
+                                <svg class="plan-icon plan-icon--no" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                                    <line x1="18" y1="6" x2="6" y2="18" />
+                                    <line x1="6" y1="6" x2="18" y2="18" />
+                                </svg>
+                                Edit book info &amp; covers
+                            </li>
                         </ul>
-                        <div class="pricing-cta">
+                        <div class="plan-action">
                             <ms-store-badge productid="9NR56GHBHMN8" productname="Obsidian Ebook Reader Free"
-                                window-mode="direct" theme="light" size="large" language="en-us" animation="on">
+                                window-mode="full" theme="light" size="large" language="en-us" animation="on">
                             </ms-store-badge>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="pricing-card pricing-card-featured fade-in delay-2">
-                        <div class="pricing-badge">Most Popular</div>
-                        <div class="pricing-header">
-                            <h3>Full</h3>
-                            <p class="pricing-desc">For power users and collectors</p>
-                        </div>
-                        <ul class="pricing-features">
-                            <li>Add unlimited number of books to library</li>
-                            <li>Edit book metadata (author, title, cover image)</li>
-                            <li>Automatically sync folders when books are added/removed</li>
-                            <li>Add books to favourites</li>
-                            <li>Edit theme colors</li>
-                            <li>Edit book styling (font, text size, margins, and more)</li>
-                            <li>Save bookmarks</li>
-                            <li>Offline reading</li>
+                    <article class="plan-card plan-card--featured reveal reveal-delay-1">
+                        <span class="plan-badge">Most popular</span>
+                        <header class="plan-header">
+                            <h3 class="plan-name">Premium</h3>
+                            <p class="plan-tagline">Unrestricted library management</p>
+                        </header>
+                        <ul class="plan-features">
+                            <li>
+                                <svg class="plan-icon plan-icon--yes" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                                Read EPUBs and PDFs
+                            </li>
+                            <li>
+                                <svg class="plan-icon plan-icon--yes" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                                Themes and font styling
+                            </li>
+                            <li>
+                                <svg class="plan-icon plan-icon--yes" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                                <strong>Unlimited</strong> library capacity
+                            </li>
+                            <li>
+                                <svg class="plan-icon plan-icon--yes" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                                Folder sync
+                            </li>
+                            <li>
+                                <svg class="plan-icon plan-icon--yes" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                                Subfolder import
+                            </li>
+                            <li>
+                                <svg class="plan-icon plan-icon--yes" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                                Edit book info &amp; covers
+                            </li>
                         </ul>
-                        <div class="pricing-cta">
+                        <div class="plan-action">
                             <ms-store-badge productid="9NMRH79RP0F4" productname="Obsidian Ebook Reader"
-                                window-mode="direct" theme="light" size="large" language="en-us" animation="on">
+                                window-mode="full" theme="light" size="large" language="en-us" animation="on">
                             </ms-store-badge>
                         </div>
-                    </div>
+                    </article>
                 </div>
+
+                <p class="pricing-note reveal">
+                    Both versions are available on the <a href="https://apps.microsoft.com/store/search/Obsidian%20Ebook%20Reader"
+                        target="_blank" rel="noopener noreferrer">Microsoft Store</a>.
+                    Need help choosing? Visit our <a href="support.html">Support page</a>.
+                </p>
             </div>
         </section>
 
-        <section class="features" id="features">
-            <div class="container">
-                <div class="section-header fade-in">
-                    <h2>Everything you need for a great read.</h2>
-                    <p>Designed with simplicity and speed in mind, allowing you to focus purely on your content.</p>
+        <section class="cta-banner" aria-labelledby="cta-heading">
+            <div class="container cta-inner reveal">
+                <div class="cta-copy">
+                    <h2 id="cta-heading">Ready to take control of your library?</h2>
+                    <p>Download Obsidian on Windows and keep your ebooks organized, offline, and private.</p>
                 </div>
-
-                <div class="feature-grid">
-                    <div class="feature-card fade-in delay-1">
-                        <h3>Private & Offline</h3>
-                        <p>Fully private and 100% offline. Read your EPUB and PDF books locally with absolutely no ads
-                            to distract you.</p>
-                    </div>
-                    <div class="feature-card fade-in delay-2">
-                        <h3>Manage Your Library</h3>
-                        <p>View all your books in an organized grid or list. Sync your book folders and edit titles,
-                            authors, and cover images.</p>
-                    </div>
-                    <div class="feature-card fade-in delay-3">
-                        <h3>Highly Customizable</h3>
-                        <p>Change font, text size, padding, line space, and word spacing. Choose from themes including
-                            true black mode.</p>
-                    </div>
-                    <div class="feature-card fade-in delay-1">
-                        <h3>Sleek Interface</h3>
-                        <p>A sleek, modern interface free from distractions, giving you the best environment to focus
-                            purely on reading.</p>
-                    </div>
-                    <div class="feature-card fade-in delay-2">
-                        <h3>Save Bookmarks</h3>
-                        <p>Easily save bookmarks in your books so you can always pick right back up exactly where you
-                            left off.</p>
-                    </div>
-                    <div class="feature-card fade-in delay-3">
-                        <h3>Blazing Fast</h3>
-                        <p>Built to be lightweight and fast. Massive EPUBs and PDFs load instantly so you never have to
-                            wait.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="cta-banner">
-            <div class="container cta-container slide-up">
-                <h2>Ready to start reading?</h2>
-                <p>Download Obsidian Ebook Reader today from the Microsoft Store.</p>
-                <div class="hero-cta">
-                    <ms-store-badge productid="9NMRH79RP0F4" productname="Obsidian Ebook Reader" window-mode="direct"
-                        theme="light" size="large" language="en-us" animation="on">
-                    </ms-store-badge>
-                </div>
+                <a href="#download" class="btn btn-primary btn-large">Get Obsidian</a>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="container footer-container">
-            <div class="footer-info">
-                <div class="logo">
-                    <div class="logo-icon"></div>
-                    Obsidian Reader
-                </div>
-                <p>&copy; 2026 Obsidian Ebook Reader. Built for Windows.</p>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <a href="index.html" class="logo logo--footer">
+                    <span class="logo-icon" aria-hidden="true"></span>
+                    <span class="logo-text">Obsidian Reader</span>
+                </a>
+                <p class="footer-tagline">&copy; 2026 Obsidian Softworks. Handcrafted for Windows.</p>
             </div>
-            <div class="footer-links">
+            <nav class="footer-nav" aria-label="Footer">
                 <a href="support.html">Support</a>
                 <a href="privacy.html">Privacy Policy</a>
-            </div>
+            </nav>
         </div>
     </footer>
 
     <script src="js/main.js"></script>
 </body>
-
 
 </html>
