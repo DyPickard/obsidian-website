@@ -44,16 +44,26 @@
     </style>
 </head>
 
-<body class="bg-light">
-    <header class="header blur-nav">
-        <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <div class="logo-icon"></div>
-                Obsidian Reader
+<body>
+    <header class="site-header" id="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo" aria-label="Obsidian Ebook Reader home">
+                <span class="logo-icon" aria-hidden="true"></span>
+                <span class="logo-text">Obsidian</span>
             </a>
-            <nav class="main-nav">
-                <a href="index.html#features">Features</a>
-                <a href="support.html" class="active">Support</a>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"
+                aria-label="Open menu">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
+
+            <nav class="site-nav" id="site-nav" aria-label="Primary">
+                <a href="index.html#features" class="nav-link">Features</a>
+                <a href="index.html#download" class="nav-link">Pricing</a>
+                <a href="support.html" class="nav-link" aria-current="page">Support</a>
+                <a href="index.html#download" class="btn btn-primary btn-small nav-cta">Get the app</a>
             </nav>
         </div>
     </header>
