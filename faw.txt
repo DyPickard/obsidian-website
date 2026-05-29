@@ -1,0 +1,12 @@
+does app collect any data?
+no
+
+does app work offline?
+yes
+
+what formats are supported?
+epub, pdf
+
+can i purchase books in the app?
+no
+
