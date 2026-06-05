@@ -1027,6 +1027,7 @@ p {
     position: relative;
     display: flex;
     flex-direction: column;
+    min-width: 0;
     padding: var(--space-xl);
     background: var(--clr-surface);
     border: 1px solid var(--glass-border);
@@ -1107,7 +1108,21 @@ p {
 .plan-action {
     display: flex;
     justify-content: center;
+    width: 100%;
+    min-width: 0;
     padding-top: var(--space-md);
+}
+
+.plan-action ms-store-badge {
+    display: block;
+    max-width: 100%;
+}
+
+.plan-action ms-store-badge::part(img) {
+    display: block;
+    max-width: 100%;
+    width: auto;
+    height: auto;
 }
 
 .pricing-note {
@@ -1406,7 +1421,8 @@ p {
 
     .pricing-cards {
         grid-template-columns: 1fr;
-        max-width: 24rem;
+        width: 100%;
+        max-width: none;
     }
 
     .cta-inner {
@@ -1469,6 +1485,10 @@ p {
 }
 
 @media (max-width: 640px) {
+    .plan-card {
+        padding: var(--space-lg);
+    }
+
     .stats-grid {
         grid-template-columns: 1fr 1fr;
         gap: var(--space-sm);
