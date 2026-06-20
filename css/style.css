@@ -662,6 +662,12 @@ p {
     object-fit: cover;
 }
 
+.device-frame--hero .device-screenshot {
+    aspect-ratio: auto;
+    object-fit: contain;
+    object-position: top center;
+}
+
 .device-frame--showcase .device-screenshot {
     aspect-ratio: auto;
     max-height: 28rem;
