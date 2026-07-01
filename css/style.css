@@ -1042,9 +1042,9 @@ p {
 }
 
 .plan-card--featured {
-    border-color: rgba(180, 83, 9, 0.25);
-    background: linear-gradient(160deg, rgba(251, 191, 36, 0.08) 0%, var(--clr-surface) 45%);
-    box-shadow: 0 0 0 1px rgba(251, 191, 36, 0.1) inset, 0 16px 40px rgba(15, 23, 42, 0.08);
+    border-color: rgba(91, 79, 212, 0.35);
+    background: linear-gradient(160deg, var(--clr-primary-alpha) 0%, var(--clr-surface) 45%);
+    box-shadow: 0 0 0 1px rgba(91, 79, 212, 0.18) inset, 0 16px 40px rgba(15, 23, 42, 0.08);
 }
 
 .plan-badge {
@@ -1075,7 +1075,17 @@ p {
 }
 
 .plan-card--featured .plan-name {
-    color: var(--clr-gold);
+    color: var(--clr-primary);
+}
+
+.plan-price {
+    margin: 0.25rem 0 0;
+}
+
+.plan-price-amount {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--clr-primary);
 }
 
 .plan-tagline {
@@ -1122,6 +1132,9 @@ p {
 .plan-action ms-store-badge {
     display: block;
     max-width: 100%;
+    transform: scale(1.35);
+    transform-origin: center;
+    margin: 0.75rem 0;
 }
 
 .plan-action ms-store-badge::part(img) {
