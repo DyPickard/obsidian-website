@@ -22,6 +22,36 @@
     <script type="module" src="https://get.microsoft.com/badge/ms-store-badge.bundled.js"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3704483830654758"
      crossorigin="anonymous"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18257318529"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18257318529');
+    </script>
+     <!-- Event snippet for Purchase conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+    function gtag_report_conversion(url) {
+    var callback = function () {
+        if (typeof(url) != 'undefined') {
+        window.location = url;
+        }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-18257318529/89-QCKTh1MIcEIGl4oFE',
+        'value': 1.0,
+        'currency': 'CAD',
+        'transaction_id': '',
+        'event_callback': callback
+        // 'new_customer': true /* calculate dynamically, populate with true/false */,
+    });
+    return false;
+    }
+    </script>
+
 </head>
 
 <body class="page-home">
@@ -55,17 +85,6 @@
             </nav>
         </div>
 
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18257318529">
-        </script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'AW-18257318529');
-
-        </script>
-    </header>
 
     <main id="main-content">
         <section class="hero" aria-labelledby="hero-heading">
@@ -369,7 +388,8 @@
                         </ul>
                         <div class="plan-action">
                             <ms-store-badge productid="9NMRH79RP0F4" productname="Obsidian Ebook Reader"
-                                window-mode="full" theme="light" size="large" language="en-us" animation="on">
+                                window-mode="full" theme="light" size="large" language="en-us" animation="on"
+                                onclick="return gtag_report_conversion('https://apps.microsoft.com/detail/9NMRH79RP0F4?launch=true&mode=full');">
                             </ms-store-badge>
                         </div>
                     </article>
